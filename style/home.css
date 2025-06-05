@@ -1,3 +1,13 @@
+/* Variáveis */
+:root {
+    --yellow: #ffb703;
+    --bg-red: #b22222;
+    --bg: #fff;
+    --card-bg: #f9f9f9;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-border-radius: 16px;
+}
+
 /* MAIN BANNER */
 .main-banner.home {
     height: 80rem;
@@ -5,237 +15,241 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .texts_banner_home {
-    padding: 4rem;
+    padding: 6rem;
     color: white;
     width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .texts_banner_home h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .texts_banner_home p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .texts_banner_home button {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    background-color: #FFB703;
+    background-color: var(--yellow);
     border: none;
     padding: 1rem 2rem;
     border-radius: 16px;
     width: fit-content;
     color: white;
+    cursor: pointer;
 }
-
 
 /* PROBLEM */
 .container-problem {
-    display: flex;
-    justify-content: space-between;
-    padding: 10rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem;
+    padding: 10rem 6rem;
+    color: black;
 }
 
+/* Textos da seção PROBLEM */
 .container-problem .texts {
     display: flex;
     flex-direction: column;
-    color: black;
+    align-items: start;
+    justify-content: center;
     gap: 1rem;
-    width: 40%;
+    max-width: 90%;
 }
 
 .container-problem .texts h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 
 .container-problem .texts p {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .container-problem .texts button {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
-    background-color: #FFB703;
+    background-color: var(--yellow);
     border: none;
     padding: 1rem 2rem;
     border-radius: 16px;
     width: fit-content;
     color: white;
     margin-top: 1.5rem;
+    cursor: pointer;
 }
 
-
-/* PROBLEM PHOTOS */
+/* Galeria de fotos */
 .container-problem .photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 15rem);
+    gap: 1.5rem 2rem;
+    width: 100%;
+}
+
+.container-problem .photos .photo {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--card-shadow);
+    background-color: #eee;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    transition: transform 0.3s ease;
 }
 
-.container-problem .photos .photo-line {
-    display: flex;
-    gap: 3rem;
+.container-problem .photos .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.container-problem .photos .photo.one {
-    width: 400px;
-    height: 120px;
-    background: url(/imgs/problems/problem-one.jpg) center center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-}
-
-.container-problem .photos .photo.two {
-    width: 200px;
-    height: 120px;
-    background: url(/imgs/problems/problem-two.jpg) center center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-}
-
-.container-problem .photos .photo.three {
-    width: 200px;
-    height: 120px;
-    background: url(/imgs/problems/problem-three.png) center center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-}
-
-.container-problem .photos .photo.four {
-    width: 400px;
-    height: 120px;
-    background: url(/imgs/problems/problem-four.jpg) center center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-}
-
-.container-problem .photos .photo.five {
-    width: 400px;
-    height: 120px;
-    background: url(/imgs/problems/problem-five.jpg) center center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-}
-
-.container-problem .photos .photo.six {
-    width: 200px;
-    height: 120px;
-    background: url(/imgs/problems/problem-six.jpg) center center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
-}
-
-
-/* SOLUTION */
 .container-solution {
-    padding: 10rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg-red);
-    color: var(--bg);
+    padding: 10rem 6rem;
     gap: 10rem;
+    background-color: #b22222;
+    color: white
 }
 
 .container-solution .texts {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.container-solution .texts p {
-    font-size: 1.2rem;
-    font-weight: 400;
+    width: 50%;
 }
 
 .container-solution .texts h2 {
+    font-size: 4rem;
     margin-bottom: 2rem;
 }
 
+.container-solution .texts p {
+    font-size: 2rem;
 
-/* ACTIONS */
+}
+
 .container-actions {
+    padding: 10rem 6rem;
+    background-color: var(--bg);
+    gap: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 4rem;
-    width: 100%;
 }
 
 .container-actions .texts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    margin-bottom: 2rem;
+    color: black;
 }
 
 .container-actions .texts h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .container-actions .texts p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
+/* Container dos cards */
 .container-actions .actions {
     display: flex;
-    width: 100%;
-    height: 500px;
     justify-content: space-between;
-    padding: 2rem 0;
+    align-items: stretch;
 }
 
-.container-actions .actions .action {
-    background-color: var(--yellow);
+.container-actions .action {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 10px var(--card-shadow);
+    border-radius: var(--card-border-radius);
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    padding: 1.5rem;
-    gap: 5%;
-    width: 350px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    cursor: default;
+    background-color: #ffb703;
+}
+
+.container-actions .action:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-actions .action .photo {
+    flex-shrink: 0;
+    height: 300px;
+    overflow: hidden;
+}
+
+.container-actions .action .photo img {
+    width: 100%;
     height: 100%;
-}
-
-.container-actions .actions .action h3 {
-    font-size: 1.5rem;
-}
-
-.container-actions .actions .action p {
-    font-size: 1.2rem;
-}
-
-
-/* ACTIONS PHOTOS */
-.container-actions .actions .action .photo {
-    display: flex;
-    width: 100%;
-    height: 60%;
-}
-
-.container-actions .actions .action .photo img {
-    display: flex;
-    width: 100%;
     object-fit: cover;
-    border-radius: 16px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.container-actions .action:hover .photo img {
+    transform: scale(1.05);
+}
+
+.container-actions .action h3 {
+    margin: 1rem 1.5rem 0.5rem 1.5rem;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.container-actions .action p {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#help-map-icon-logo {
+    height: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.social-medias a {
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-medias a:hover {
+    color: #ffb703;
 }

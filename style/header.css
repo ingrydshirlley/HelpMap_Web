@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 3rem 6rem;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -19,7 +19,7 @@ header #menu {
 
 header #menu li {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 30px;
 }
 
