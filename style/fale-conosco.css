@@ -1,55 +1,104 @@
-/* MAIN BANNER */
-.main-banner.fale-conosco{
-    height: 80rem;
-    background: url(/imgs/banner/banner-fale-conosco.jpg) center center  no-repeat;
-    background-size: cover;   
+.main-banner.fale-conosco {
+    height: 100vh;
+    background: url(/imgs/banner/banner-fale-conosco.jpg) center center no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 6rem;
 }
 
+.main-banner.fale-conosco .form-fale-conosco {
+    width: 100%;
+    max-width: 50%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-/* FORM FALE CONOSCO */
+.main-banner.fale-conosco .form-fale-conosco h1 {
+    margin-bottom: 4rem;
+    font-size: 3rem; 
+    text-align: center;
+    color: #333;
+}
 
-.main-banner.fale-conosco .form-fale-conosco{
-    width:800px;
-    height: 500px;
-    background-color: var(--bg);
-    border-radius: 20px;
+.form-fale-conosco form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1.5rem;
 }
 
-.main-banner.fale-conosco .form-fale-conosco h1{
-    margin: 2rem 0 5rem 0;
-    
+.form-fale-conosco .line {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.main-banner.fale-conosco .form-fale-conosco form{
+.form-fale-conosco .input-item {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    
 }
 
-.main-banner.fale-conosco .form-fale-conosco form .line{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
+.form-fale-conosco label {
+    font-size: 1.5rem; 
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
-.main-banner.fale-conosco .form-fale-conosco form .input-item{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
+.form-fale-conosco input,
+.form-fale-conosco textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: #f9f9f9;
+    resize: vertical;
+    transition: border 0.2s ease;
 }
 
-.main-banner.fale-conosco .form-fale-conosco form input,
-.main-banner.fale-conosco .form-fale-conosco form textarea{
-    width: 100%;
+.form-fale-conosco input:focus,
+.form-fale-conosco textarea:focus {
+    border-color: #ffb703;
+    outline: none;
+}
+
+.form-fale-conosco textarea {
+    min-height: 120px;
+}
+
+.form-fale-conosco button {
+    align-self: center;
+    background-color: #10b981;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+}
+
+.form-fale-conosco button:hover {
+    background-color: #ffb703;
+}
+
+@media (max-width: 768px) {
+    .main-banner.fale-conosco .form-fale-conosco {
+        padding: 2rem;
+    }
+
+    .form-fale-conosco .line {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-banner.fale-conosco .form-fale-conosco h1 {
+        font-size: 2rem; 
+    }
 }
