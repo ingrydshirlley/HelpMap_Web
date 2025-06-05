@@ -1,76 +1,109 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help Map</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Map</title>
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="/style/reset.css" />
-    <link rel="stylesheet" href="/style/cadastro.css" />
-    <link rel="stylesheet" href="/style/header.css" />
-    <link rel="stylesheet" href="/style/footer.css" />
-  </head>
-  <body>
-    <header>
-      <img
-        src="/imgs/logos/white-logo.png"
-        alt="main-logo"
-        id="help-map-logo"
-      />
-      <nav>
-        <ul id="menu">
-          <li><a href="/pages/index.html">Home</a></li>
-          <li><a href="/pages/mapa.html">Mapa</a></li>
-          <li><a href="/pages/quem-somos.html">Quem Somos</a></li>
-          <li><a href="/pages/fale-conosco.html">Fale Conosco</a></li>
-          <li><a href="/pages/login.html" id="login-button">Login</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <main class="main-banner cadastro">
-      <section class="form-cadastro">
-        <h1>Cadastre-se</h1>
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="/style/reset.css" />
+  <link rel="stylesheet" href="/style/cadastro.css" />
+  <link rel="stylesheet" href="/style/header.css" />
+  <link rel="stylesheet" href="/style/footer.css" />
+</head>
 
-        <form>
-           
-        </form>
-         
-      </section>
-    </main>
+<body>
+  <header>
+    <img src="/imgs/logos/white-logo.png" alt="main-logo" id="help-map-logo" />
+    <nav>
+      <ul id="menu">
+        <li><a href="/pages/index.html">Home</a></li>
+        <li><a href="/pages/mapa.html">Mapa</a></li>
+        <li><a href="/pages/quem-somos.html">Quem Somos</a></li>
+        <li><a href="/pages/fale-conosco.html">Fale Conosco</a></li>
+        <li><a href="/pages/login.html" id="login-button">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    
-    <footer id="footer">
-      <img
-        src="/imgs/logos/icon-logo-dark.png"
-        alt="icon-logo"
-        id="help-map-icon-logo"
-      />
-      <p>@Copywrite</p>
-      <div class="social-medias">
-        <a href="https://www.instagram.com/sua-pagina" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
+  <main class="main-banner cadastro">
+    <section class="form-cadastro">
+      <h1>Cadastre-se</h1>
 
-        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="https://www.youtube.com/seu-canal" target="_blank">
-          <i class="fab fa-youtube"></i>
-        </a>
+      <div class="input-row">
+        <div class="input-item">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="input-item">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome" required />
+        </div>
       </div>
-    </footer>
 
-    <script src="/script/script.js"></script>
-  </body>
+      <div class="input-row">
+        <div class="input-item">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-item">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required />
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-item">
+          <label for="pais">País</label>
+          <input type="text" id="pais" name="pais" required />
+        </div>
+        <div class="input-item">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" required />
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="input-item">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required />
+        </div>
+        <div class="input-item">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" required />
+        </div>
+      </div>
+
+      <div class="input-item full">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" required />
+      </div>
+
+      <button type="submit" class="btn-cadastrar">Cadastrar-se</button>
+
+
+
+    </section>
+  </main>
+
+
+  <footer>
+    <img src="/imgs/logos/white-logo.png" alt="Ícone Help Map" id="help-map-icon-logo" />
+    <p>&copy; Help Map</p>
+    <div class="social-medias">
+      <a href="https://www.instagram.com/sua-pagina" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/seu-canal" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="/script/script.js"></script>
+</body>
+
 </html>
