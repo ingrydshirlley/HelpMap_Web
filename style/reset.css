@@ -19,8 +19,6 @@ html {
 body {
   background-color: var(--bg);
   scroll-behavior: smooth;
-  font-family: Bebas Neue, sans-serif;
-  font-size: 1.6rem;
 }
 
 a {
