@@ -1,0 +1,101 @@
+/* MAIN BANNER - QUEM SOMOS */
+.main-banner.quem-somos{
+    height: 80rem;
+    background: url(/imgs/banner/banner-quem-somos.jpg) center center no-repeat;
+    background-size: cover;   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+
+/* MISSION */
+.mission{
+    text-align: center;
+    width: 100%;
+}
+
+
+/* VISION */
+.vision{
+    text-align: center;
+    width: 100%;  
+}
+
+
+/* VALUES */
+.values  {
+    text-align: center;
+    width: 100%;
+    }
+
+.values #line-values{
+display: flex;
+}
+
+.values .value img{
+    width: auto;
+    height: 20px;
+}
+
+
+/* TEAM */
+.container-team{
+background-color: var(--yellow);
+color: var(--black);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.container-team .our-team{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-team .our-team .member{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TEAM PHOTOS */
+
+.container-team .our-team .member .photo.one{
+    width:100px;
+    height: 100px;
+    background: url(/imgs/team/photo-one.png) center center no-repeat;
+    background-size: cover;
+}
+
+.container-team .our-team .member .photo.two{
+    width:100px;
+    height: 100px;
+    background: url(/imgs/team/photo-two.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.container-team .our-team .member .photo.three{
+    width:100px;
+    height: 100px;
+    background: url(/imgs/team/photo-three.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.container-team .our-team .member .photo.four{
+    width:100px;
+    height: 100px;
+    background: url(/imgs/team/photo-four.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.container-team .our-team .member .photo.five{
+    width:100px;
+    height: 100px;
+    background: url(/imgs/team/photo-five.jpg) center center no-repeat;
+    background-size: cover;
+}

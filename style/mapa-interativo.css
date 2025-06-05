@@ -1,0 +1,216 @@
+.main-banner.mapa-interativo{
+    height: 80rem;
+    background-color: var(--bg-dark);   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: var(--bg);
+    text-align: center;
+}
+
+.main-banner.mapa-interativo section{
+    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+/* ADICIONAR CARTÃO */
+.main-banner.mapa-interativo section .btn-add-card{
+    position: absolute;
+    right: 60px;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.main-banner.mapa-interativo section .btn-add-card img{
+    width: auto;
+    height: 60px;
+    
+}
+
+/* CARD ADD */
+.main-banner.mapa-interativo section .card-add{
+    position: absolute;
+    background-color: var(--bg);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    z-index: 100;
+}
+
+.card-add.show {
+    display: flex !important;
+}
+
+.main-banner.mapa-interativo section .card-add .input-item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+     margin-bottom: 15px;
+}
+
+.main-banner.mapa-interativo section .card-add h2,
+.main-banner.mapa-interativo section .card-add label,
+.main-banner.mapa-interativo section .card-add input{
+color:var(--bg-dark);
+}
+
+.main-banner.mapa-interativo section .card-add h2{
+    font-size: 24px;
+    margin: 4rem 0 3rem 0;
+    font-weight: lighter;
+}
+
+.main-banner.mapa-interativo section .card-add label{
+    font-size: 12px;
+}
+
+.main-banner.mapa-interativo section .card-add input{
+ width: 300px;
+ height: 30px;
+ border: 1px solid var(--borders);
+ border-radius: 5px;
+ padding: 2px 10px;
+
+}
+
+.main-banner.mapa-interativo section .card-add .btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.main-banner.mapa-interativo section .card-add img{
+    width: auto;
+    height: 40px;
+}
+
+.main-banner.mapa-interativo section .card-add button{
+    background-color: var(--light-green);
+    color: var(--bg);
+    border: 1px solid var(--borders);
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    width: 300px;
+    margin-top: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* MAPA */
+.main-banner.mapa-interativo section .map{
+    width: 60%;
+    height: 40rem;
+    background: url(/imgs/mapa-interativo.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    overflow:hidden;
+    border-radius: 15px;
+    cursor: grab;
+}
+
+
+/* TEXTOS */
+.main-banner.mapa-interativo section .texts,
+.main-banner.mapa-interativo section .warning{
+    width: 60%;
+    font-size: 12px;
+}
+
+.main-banner.mapa-interativo section .texts{
+    margin-bottom: 3rem;
+    line-height: 20px;
+}
+
+.main-banner.mapa-interativo section h2{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+
+
+.main-banner.mapa-interativo section .warning{
+    margin-top: 4rem;
+    line-height: 20px;
+    width: 50%;
+}
+
+
+/* SEARCH AND FILTER */
+
+.main-banner.mapa-interativo section .search-filter{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+
+/* SEARCH */
+.main-banner.mapa-interativo section .search-filter .input-search{
+    width: 70%;
+    display: flex;
+    position: relative;
+    
+}
+
+.main-banner.mapa-interativo section .search-filter .input-search input{
+    width: 90%;
+    height: 30px;
+    background-color: var(--bg);
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.main-banner.mapa-interativo section .search-filter .input-search img{
+    width: auto;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/* FILTER */
+.main-banner.mapa-interativo section .search-filter .filter{
+    width: 20%;
+    background-color: var(--bg);
+    height: 30px;
+        display: flex;
+    align-items:center;
+    justify-content:left;
+        border: none;
+    border-radius: 5px;
+}
+
+.main-banner.mapa-interativo section .search-filter .filter img{
+    width: auto;
+    height: 30px;
+    padding-left: 4px;
+
+}
+
+.main-banner.mapa-interativo section .search-filter .filter p{
+font-size: 14px;
+color: var(--bg-dark);
+padding-left: 10px;
+}
+
+

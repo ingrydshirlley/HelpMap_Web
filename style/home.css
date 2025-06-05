@@ -1,0 +1,125 @@
+/* MAIN BANNER */
+.main-banner.home{
+    height: 80rem;
+    background: url(/imgs/banner/banner-home.jpg) center center  no-repeat;
+    background-size: cover;   
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+/* PROBLEM */
+.container-problem{
+    display: flex;
+    background-color: plum;
+    
+}
+
+.container-problem .photo-line{
+    display: flex;
+}
+
+
+/* PROBLEM PHOTOS */
+.container-problem .photos .photo.one{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/problems/problem-one.jpg) center center  no-repeat;
+    background-size: cover;
+}
+
+.container-problem .photos .photo.two{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/problems/problem-two.jpg) center center  no-repeat;
+    background-size: cover;
+}
+
+.container-problem .photos .photo.three{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/problems/problem-three.png) center center  no-repeat;
+    background-size: cover;
+}
+
+.container-problem .photos .photo.four{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/problems/problem-four.jpg) center center  no-repeat;
+    background-size: cover;
+}
+
+.container-problem .photos .photo.five{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/problems/problem-five.jpg) center center  no-repeat;
+    background-size: cover;
+}
+
+.container-problem .photos .photo.six{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/problems/problem-six.jpg) center center  no-repeat;
+    background-size: cover;
+}
+
+
+/* SOLUTION */
+
+.container-solution{
+    display: flex;
+    background-color: var(--bg-red);
+    color:var(--bg);
+}
+
+ 
+/* ACTIONS */
+.container-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    width: 100%;
+}
+
+.container-actions .actions{
+    display: flex;
+    width:1/3;
+    height: 500px;
+}
+
+.container-actions .actions .action{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+}
+
+
+
+/* ACTIONS PHOTOS */
+
+.container-actions .actions .photo.one{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/actions/action-one.jpg) center center  no-repeat;
+    background-size: cover; 
+}
+
+.container-actions .actions .photo.two{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/actions/action-two.jpg) center center  no-repeat;
+    background-size: cover; 
+}
+
+.container-actions .actions .photo.three{
+    width: 100px;
+    height: 100px;
+    background: url(/imgs/actions/action-three.jpg) center center  no-repeat;
+    background-size: cover; 
+}

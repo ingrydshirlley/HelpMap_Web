@@ -1,0 +1,24 @@
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 13rem;
+}
+
+footer #help-map-icon-logo{
+  width: auto;
+  height: 70px;
+}
+
+
+footer a i {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  footer a i:hover {
+    color: #e1306c; /* por exemplo, rosa para Instagram */
+  }

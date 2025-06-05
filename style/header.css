@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+header #help-map-logo {
+  width: auto;
+  height: 60px;
+}
+
+header #menu {
+  display: flex;
+}
+
+header #menu li {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 30px;
+}
+
+header #menu a {
+  color: var(--bg);
+  transition: color 0.2s ease-in;
+}
+
+header #menu a:hover {
+  color: var(--yellow);
+}
+
+header #menu #login-button {
+  background-color: var(--light-green);
+  padding: 6px 30px;
+  border-radius: 100px;
+}
+
+
+/* MAPA INTERATIVO*/
+header #logout-button {
+  text-align: center;
+}
+
+header #logout-button img{
+  width: auto;
+  height: 60px;
+  padding-right: 5px;
+}
+
+header #logout-button p{
+  text-align: center;
+ color: var(--bg);
+ font-size: 14px;
+ padding-left: 5px;
+}
+

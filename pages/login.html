@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Map</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/login.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/imgs/logos/white-logo.png"
+        alt="main-logo"
+        id="help-map-logo"
+      />
+      <nav>
+        <ul id="menu">
+          <li><a href="/pages/index.html">Home</a></li>
+          <li><a href="/pages/mapa.html">Mapa</a></li>
+          <li><a href="/pages/quem-somos.html">Quem Somos</a></li>
+          <li><a href="/pages/fale-conosco.html">Fale Conosco</a></li>
+          <li><a href="/pages/login.html" id="login-button">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-banner login">
+      <section class="form-login">
+        <h1>Login</h1>
+
+        <form>
+          <div class="input-item">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-item">
+            <label for="password">Sobrenome</label>
+          <input type="password" id="password" name="password" required />          
+          </div>
+
+
+
+
+          <a href="/pages/mapa-interativo.html" class="btn-login">Entrar</a>
+        </form>
+        <a href="/pages/cadastro.html" class="btn-cadastro">Cadastre-se</a>
+      </section>
+    </main>
+
+     
+    <footer id="footer">
+      <img
+        src="/imgs/logos/icon-logo-dark.png"
+        alt="icon-logo"
+        id="help-map-icon-logo"
+      />
+      <p>@Copywrite</p>
+      <div class="social-medias">
+        <a href="https://www.instagram.com/sua-pagina" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.youtube.com/seu-canal" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>

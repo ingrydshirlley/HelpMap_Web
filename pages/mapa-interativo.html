@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Map</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/mapa-interativo.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/imgs/logos/white-logo.png"
+        alt="main-logo"
+        id="help-map-logo"
+      />
+      <a href="/pages/login.html" id="logout-button">
+        <img src="/imgs/icons/icon-logout.png" />
+        <p>Log out</p>
+      </a>
+    </header>
+
+    <main class="main-banner mapa-interativo">
+      <section>
+        <div class="texts">
+          <h2>Cadastre seu abrigo ou ponto de doação.</h2>
+          <p>
+            Ajude quem precisa a encontrar apoio com mais facilidade.
+          </p>
+        </div>
+        <div class="search-filter">
+          <div class="input-search">
+            <input type="text" id="search" name="search" />
+            <img src="/imgs/icons/icon-search.png" />
+          </div>
+          <div class="filter">
+            <img src="/imgs/icons/icon-filter.png" />
+            <p>Filtros</p>
+          </div>
+        </div>
+        <div class="map"></div>
+        <div class="warning">
+          <p>⚠️ Aviso:</p>
+          <p>
+            As informações desta plataforma são constantemente atualizadas.
+            Confirme disponibilidade diretamente com os pontos indicados sempre
+            que possível.
+          </p>
+        </div>
+        <a class="btn-add-card">
+          <img src="/imgs/icons/icon-btn-add.png" />
+        </a>
+        <div class="card-add">
+          <h2>Adicionar Abrigo</h2>
+          <form>
+            <div class="input-item">
+              <label for="name">Nome da Instituição</label>
+              <input type="name" id="name" name="name" required />
+            </div>
+            <div class="input-item">
+              <label for="address">Endereço da Instituição</label>
+              <input type="address" id="address" name="address" required />
+            </div>
+
+                      <div class="input-item">
+              <label for="number">Capacidade de Pessoas</label>
+              <input type="number" id="number" name="number" required />
+            </div>
+
+                        <div class="input-item">
+              <label for="name">Recursos disponíveis</label>
+              <input type="name" id="name" name="name" required />
+            </div>
+
+                        <div class="input-item">
+              <label for="name">Necessidades urgentes</label>
+              <input type="name" id="name" name="name" required />
+            </div>
+          </form>
+
+          <button type="button">Cadastrar</button>
+          <a class="btn-close"><img src="/imgs/icons/icon-close.png"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <img
+        src="/imgs/logos/icon-logo-dark.png"
+        alt="icon-logo"
+        id="help-map-icon-logo"
+      />
+      <p>@Copywrite</p>
+      <div class="social-medias">
+        <a href="https://www.instagram.com/sua-pagina" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.youtube.com/seu-canal" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>
