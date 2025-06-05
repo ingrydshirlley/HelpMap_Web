@@ -1,101 +1,233 @@
-/* MAIN BANNER - QUEM SOMOS */
-.main-banner.quem-somos{
-    height: 80rem;
+.main-banner.quem-somos {
+    height: 80vh;
     background: url(/imgs/banner/banner-quem-somos.jpg) center center no-repeat;
-    background-size: cover;   
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    padding: 5rem 6rem;
+    color: white;
 }
 
-
-/* MISSION */
-.mission{
-    text-align: center;
-    width: 100%;
+.main-banner.quem-somos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* preto com 40% de opacidade */
+    z-index: 0;
+    /* fica atrás do conteúdo */
 }
 
-
-/* VISION */
-.vision{
-    text-align: center;
-    width: 100%;  
+.main-banner.quem-somos h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    z-index: 1;
 }
 
-
-/* VALUES */
-.values  {
-    text-align: center;
-    width: 100%;
-    }
-
-.values #line-values{
-display: flex;
+.main-banner.quem-somos p {
+    font-size: 2rem;
+    width: 40%;
+    font-weight: 400;
+    margin: 3rem 0rem 3rem 0rem;
+    z-index: 1;
 }
 
-.values .value img{
-    width: auto;
-    height: 20px;
+.main-banner.quem-somos button {
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: var(--yellow);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
 }
 
-
-/* TEAM */
-.container-team{
-background-color: var(--yellow);
-color: var(--black);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-.container-team .our-team{
+.container-mvv {
+    padding: 10rem 6rem;
     display: flex;
-    justify-content: space-around;
-}
-
-.container-team .our-team .member{
-    display: flex;
-    width: 20%;
     flex-direction: column;
+    gap: 7rem;
     align-items: center;
 }
 
-
-/* TEAM PHOTOS */
-
-.container-team .our-team .member .photo.one{
-    width:100px;
-    height: 100px;
-    background: url(/imgs/team/photo-one.png) center center no-repeat;
-    background-size: cover;
+.box-mvv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
-.container-team .our-team .member .photo.two{
-    width:100px;
-    height: 100px;
-    background: url(/imgs/team/photo-two.jpg) center center no-repeat;
-    background-size: cover;
+.box-mvv h2 {
+    font-size: 3rem;
 }
 
-.container-team .our-team .member .photo.three{
-    width:100px;
-    height: 100px;
-    background: url(/imgs/team/photo-three.jpg) center center no-repeat;
-    background-size: cover;
+.box-mvv p {
+    font-size: 2rem;
 }
 
-.container-team .our-team .member .photo.four{
-    width:100px;
-    height: 100px;
-    background: url(/imgs/team/photo-four.jpg) center center no-repeat;
-    background-size: cover;
+.values {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
 }
 
-.container-team .our-team .member .photo.five{
-    width:100px;
-    height: 100px;
-    background: url(/imgs/team/photo-five.jpg) center center no-repeat;
+.values h2 {
+    font-size: 3rem;
+}
+
+#line-values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.values .value img {
+    width: auto;
+    height: 30px;
+}
+
+#line-values .value .title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#line-values .value p {
+    font-size: 1.7rem;
+}
+
+.container-team {
+    padding: 8rem 6rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.container-team h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container-team p {
+    font-size: 2rem;
+    font-weight: 400;
+    width: 70%;
+}
+
+.container-team .our-team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.container-team .our-team {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: transparent; 
+    width: 70%;
+    flex-wrap: wrap; 
+}
+
+.container-team .our-team .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: auto;
+}
+
+.container-team .our-team .member .photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.container-team .our-team .member .photo:hover {
+    transform: scale(1.05);
+}
+
+.container-team .our-team .member .name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    width: auto;
+}
+
+.container-team .our-team .member p:last-child {
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+        width: auto;
+}
+
+.container-team .our-team .member .photo.one {
+    background-image: url(/imgs/team/photo-one.png);
+}
+
+.container-team .our-team .member .photo.two {
+    background-image: url(/imgs/team/photo-two.jpg);
+}
+
+.container-team .our-team .member .photo.three {
+    background-image: url(/imgs/team/photo-three.jpg);
+}
+
+.container-team .our-team .member .photo.four {
+    background-image: url(/imgs/team/photo-four.jpg);
+}
+
+.container-team .our-team .member .photo.five {
+    background-image: url(/imgs/team/photo-five.jpg);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-team .our-team {
+        width: 90%;
+        gap: 2rem;
+    }
+    
+    .container-team .our-team .member {
+        width: 100px;
+    }
+    
+    .container-team .our-team .member .photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .container-team .our-team .member .name {
+        font-size: 1rem;
+    }
+    
+    .container-team .our-team .member p:last-child {
+        font-size: 0.9rem;
+    }
 }

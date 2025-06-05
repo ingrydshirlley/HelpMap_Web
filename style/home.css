@@ -60,7 +60,6 @@
     color: black;
 }
 
-/* Textos da seção PROBLEM */
 .container-problem .texts {
     display: flex;
     flex-direction: column;
@@ -221,35 +220,4 @@
     font-size: 1.5rem;
     color: #555;
     flex-grow: 1;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    padding: 2rem 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-#help-map-icon-logo {
-    height: 40px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.social-medias a {
-    color: white;
-    font-size: 2rem;
-    margin-left: 1rem;
-    transition: color 0.3s ease;
-}
-
-footer .social-medias a:hover {
-    color: #ffb703;
 }
