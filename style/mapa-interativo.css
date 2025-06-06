@@ -1,216 +1,291 @@
-.main-banner.mapa-interativo{
-    height: 80rem;
-    background-color: var(--bg-dark);   
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: plum;
+    color: #333;
+}
+
+#logout-button img {
+    height: 20px;
+}
+
+/* Main comum às duas páginas */
+main.main-banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: #333;
+}
+
+main.main-banner section {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    color: var(--bg);
-    text-align: center;
+    gap: 2rem;
 }
 
-.main-banner.mapa-interativo section{
+/* Estilos para a tela de cadastro */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
     width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-position: relative;
 }
 
-/* ADICIONAR CARTÃO */
-.main-banner.mapa-interativo section .btn-add-card{
+form button {
+    padding: 0.75rem;
+    background-color: #016fb9;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #015290;
+}
+
+/* Estilos da página do mapa interativo */
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    flex: 1;
+    min-width: 200px;
+}
+
+.texts h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.texts p{
+    font-size: 1.5rem;
+}
+
+.input-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.input-search img {
+    width: 20px;
+    margin-left: 0.5rem;
+}
+
+.filter {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #e6f0fa;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.filter img {
+    height: 20px;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+    background: url(/imgs/mapa-interativo.jpg) no-repeat center center;
+    border-radius: 8px;
+}
+
+.warning {
+    background-color: #9b222650;
+    padding: 1rem;
+    border-left: 5px solid red;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.warning p:first-child {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+
+/* BOTÃO ADICIONAR CARTÃO */
+.btn-add-card {
     position: absolute;
     right: 60px;
     bottom: 100px;
     cursor: pointer;
+    z-index: 110;
+    transition: transform 0.3s ease;
 }
 
-.main-banner.mapa-interativo section .btn-add-card img{
-    width: auto;
+.btn-add-card:hover {
+    transform: scale(1.1);
+}
+
+.btn-add-card img {
     height: 60px;
-    
+    width: auto;
+    filter: drop-shadow(0 0 3px var(--light-green));
 }
 
-/* CARD ADD */
-.main-banner.mapa-interativo section .card-add{
+/* CARD DE ADICIONAR ABRIGO */
+.card-add {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--bg);
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    max-width: 90vw;
+    height: auto;
+    max-height: 90vh;
     border-radius: 15px;
+    display: none;
     flex-direction: column;
     align-items: center;
-    display: none;
-    z-index: 100;
+    padding: 3rem 2.5rem 3rem 2.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    z-index: 120;
 }
 
 .card-add.show {
     display: flex !important;
 }
 
-.main-banner.mapa-interativo section .card-add .input-item{
+form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.card-add h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bg-dark);
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+/* INPUTS E LABELS */
+.input-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
     text-align: left;
-     margin-bottom: 15px;
 }
 
-.main-banner.mapa-interativo section .card-add h2,
-.main-banner.mapa-interativo section .card-add label,
-.main-banner.mapa-interativo section .card-add input{
-color:var(--bg-dark);
+.input-item label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--bg-dark);
+    user-select: none;
 }
 
-.main-banner.mapa-interativo section .card-add h2{
-    font-size: 24px;
-    margin: 4rem 0 3rem 0;
-    font-weight: lighter;
+.input-item input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    border: 1.5px solid var(--borders);
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: var(--bg-dark);
+    transition: border-color 0.3s ease;
 }
 
-.main-banner.mapa-interativo section .card-add label{
-    font-size: 12px;
+.input-item input:focus {
+    outline: none;
+    border-color: var(--light-green);
+    box-shadow: 0 0 5px var(--light-green);
 }
 
-.main-banner.mapa-interativo section .card-add input{
- width: 300px;
- height: 30px;
- border: 1px solid var(--borders);
- border-radius: 5px;
- padding: 2px 10px;
-
-}
-
-.main-banner.mapa-interativo section .card-add .btn-close{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-
-}
-
-.main-banner.mapa-interativo section .card-add img{
-    width: auto;
-    height: 40px;
-}
-
-.main-banner.mapa-interativo section .card-add button{
+/* BOTÃO CADASTRAR */
+.card-add button {
     background-color: var(--light-green);
     color: var(--bg);
-    border: 1px solid var(--borders);
-    border-radius: 5px;
-    height: 40px;
-    font-size: 16px;
-    width: 300px;
-    margin-top: 4rem;
-    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-add button:hover {
+    background-color: #388e3c;
+}
+
+/* BOTÃO FECHAR */
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
 }
 
-
-
-/* MAPA */
-.main-banner.mapa-interativo section .map{
-    width: 60%;
-    height: 40rem;
-    background: url(/imgs/mapa-interativo.jpg) no-repeat; 
-    background-size: cover;
-    background-position: center;
-    overflow:hidden;
-    border-radius: 15px;
-    cursor: grab;
-}
-
-
-/* TEXTOS */
-.main-banner.mapa-interativo section .texts,
-.main-banner.mapa-interativo section .warning{
-    width: 60%;
-    font-size: 12px;
-}
-
-.main-banner.mapa-interativo section .texts{
-    margin-bottom: 3rem;
-    line-height: 20px;
-}
-
-.main-banner.mapa-interativo section h2{
-    margin-bottom: 1rem;
-    font-size: 20px;
-}
-
-
-
-.main-banner.mapa-interativo section .warning{
-    margin-top: 4rem;
-    line-height: 20px;
-    width: 50%;
-}
-
-
-/* SEARCH AND FILTER */
-
-.main-banner.mapa-interativo section .search-filter{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-    margin-bottom: 1rem;
-}
-
-
-/* SEARCH */
-.main-banner.mapa-interativo section .search-filter .input-search{
-    width: 70%;
-    display: flex;
-    position: relative;
-    
-}
-
-.main-banner.mapa-interativo section .search-filter .input-search input{
-    width: 90%;
-    height: 30px;
-    background-color: var(--bg);
-    border: none;
-    border-radius: 5px;
-    padding-left: 30px;
-}
-
-.main-banner.mapa-interativo section .search-filter .input-search img{
+.btn-close img {
+    height: 28px;
     width: auto;
-    height: 16px;
-    position: absolute;
-    top: 50%;
-    left: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
+    filter: brightness(0.4);
+    transition: filter 0.3s ease;
 }
 
-
-/* FILTER */
-.main-banner.mapa-interativo section .search-filter .filter{
-    width: 20%;
-    background-color: var(--bg);
-    height: 30px;
-        display: flex;
-    align-items:center;
-    justify-content:left;
-        border: none;
-    border-radius: 5px;
+.btn-close:hover img {
+    filter: brightness(1);
 }
-
-.main-banner.mapa-interativo section .search-filter .filter img{
-    width: auto;
-    height: 30px;
-    padding-left: 4px;
-
-}
-
-.main-banner.mapa-interativo section .search-filter .filter p{
-font-size: 14px;
-color: var(--bg-dark);
-padding-left: 10px;
-}
-
-
