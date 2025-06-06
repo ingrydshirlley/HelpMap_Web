@@ -1,5 +1,5 @@
 .main-banner.fale-conosco {
-    height: 100vh;
+    height: auto;
     background: url(/imgs/banner/banner-fale-conosco.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
@@ -14,12 +14,14 @@
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 16px;
     padding: 3rem 2rem;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .main-banner.fale-conosco .form-fale-conosco h1 {
     margin-bottom: 4rem;
-    font-size: 3rem; 
+    font-size: 3rem;
     text-align: center;
     color: #333;
 }
@@ -43,7 +45,7 @@
 }
 
 .form-fale-conosco label {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: #333;
@@ -91,6 +93,9 @@
 @media (max-width: 768px) {
     .main-banner.fale-conosco .form-fale-conosco {
         padding: 2rem;
+        max-width: 100%;
+        margin-top: 8rem;
+        margin-bottom: 1rem;
     }
 
     .form-fale-conosco .line {
@@ -99,6 +104,6 @@
     }
 
     .main-banner.fale-conosco .form-fale-conosco h1 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 }

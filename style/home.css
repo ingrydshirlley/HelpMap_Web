@@ -435,6 +435,10 @@
 }
 
 @media (max-width: 700px) {
+    .texts_banner_home {
+        width: 100%;
+    }
+    
     .container-problem {
         display: flex;
         flex-direction: row;
@@ -474,5 +478,3 @@
         text-align: center;
     }
 }
-
-@media (max-width: 650px) {}

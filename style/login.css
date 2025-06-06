@@ -1,4 +1,3 @@
-/* MAIN BANNER */
 .main-banner.login {
     width: 100%;
     height: 80rem;
@@ -10,7 +9,6 @@
     justify-content: center;
 }
 
-/* FORM LOGIN */
 .main-banner.login .form-login {
     width: 100%;
     max-width: 400px;
@@ -104,18 +102,25 @@
     color: white;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
     .main-banner.login .form-login {
         padding: 2rem;
         width: 90%;
-    }
 
-    .main-banner.login .form-login form .input-item {
-        width: 100%;
     }
 
     .main-banner.login .form-login h1 {
         font-size: 2rem;
+    }
+
+    .main-banner.login {
+        width: 100%;
+        height: 60rem;
+        background: url(/imgs/banner/banner-login-cadastro.jpg) center center no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -14,8 +14,8 @@ footer #help-map-icon-logo {
 }
 
 footer p {
-    margin: 0;
-    font-size: 2rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .social-medias {
@@ -24,12 +24,48 @@ footer p {
 }
 
 .social-medias a {
-    color: white;
-    font-size: 4rem;
-    margin-left: 1rem;
-    transition: color 0.3s ease;
+  color: white;
+  font-size: 4rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
 }
 
 footer .social-medias a:hover {
-    color: #ffb703;
+  color: #ffb703;
+}
+
+
+@media (max-width: 1290px) {
+  footer #help-map-icon-logo {
+    width: auto;
+    height: 50px;
+  }
+
+  .social-medias a {
+    font-size: 3rem;
+    margin-left: .5rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 3rem 6rem;
+    gap: 1.5rem;
+  }
+
+  footer #help-map-icon-logo {
+    height: 40px;
+  }
+
+  .social-medias a {
+    font-size: 2.5rem;
+    margin-left: .5rem;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
 }

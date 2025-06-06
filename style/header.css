@@ -84,9 +84,9 @@ header #logout-button p {
   }
 
   header #help-map-logo {
-  width: auto;
-  height: 40px;
-}
+    width: auto;
+    height: 40px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -112,5 +112,22 @@ header #logout-button p {
 @media (max-width: 650px) {
   header #menu li {
     display: none;
+  }
+
+   header #help-map-logo {
+    width: auto;
+    height: 20px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  header #menu li {
+    display: none;
+  }
+
+   header #help-map-logo {
+    width: auto;
+    height: 20px;
   }
 }

@@ -1,91 +1,74 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help Map</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Map</title>
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="/style/reset.css" />
-    <link rel="stylesheet" href="/style/mapa-interativo.css" />
-    <link rel="stylesheet" href="/style/header.css" />
-    <link rel="stylesheet" href="/style/footer.css" />
-  </head>
-  <body>
-    <header>
-      <img
-        src="/imgs/logos/white-logo.png"
-        alt="main-logo"
-        id="help-map-logo"
-      />
-      <a href="/pages/login.html" id="logout-button">
-        <img src="/imgs/icons/icon-home.png" />
-        <p>Home</p>
-      </a>
-    </header>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <main class="main-banner mapa-interativo">
-      <section>
-        <div class="texts">
-          <h2>Encontre abrigos e pontos de doação perto de você.</h2>
-          <p>
-            Navegue pelo mapa abaixo e clique nos pontos para ver os recursos
-            disponíveis, o que ainda é necessário e se o local está recebendo
-            novas pessoas.
-          </p>
-        </div>
-        <div class="search-filter">
-          <div class="input-search">
-            <input type="text" id="search" name="search" />
-            <img src="/imgs/icons/icon-search.png" />
-          </div>
-          <div class="filter">
-            <img src="/imgs/icons/icon-filter.png" />
-            <p>Filtros</p>
-          </div>
-        </div>
-        <div class="map"></div>
-        <div class="warning">
-          <p>⚠️ Aviso:</p>
-          <p>
-            As informações desta plataforma são constantemente atualizadas.
-            Confirme disponibilidade diretamente com os pontos indicados sempre
-            que possível.
-          </p>
-        </div>
-      </section>
-    </main>
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="/style/reset.css" />
+  <link rel="stylesheet" href="/style/mapa-interativo.css" />
+  <link rel="stylesheet" href="/style/header.css" />
+  <link rel="stylesheet" href="/style/footer.css" />
+</head>
 
-    <footer id="footer">
-      <img
-        src="/imgs/logos/icon-logo-dark.png"
-        alt="icon-logo"
-        id="help-map-icon-logo"
-      />
-      <p>@Copywrite</p>
-      <div class="social-medias">
-        <a href="https://www.instagram.com/sua-pagina" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
+<body>
+  <header>
+    <img src="/imgs/logos/white-logo.png" alt="main-logo" id="help-map-logo" />
+    <a href="/pages/login.html" id="logout-button">
+      <img src="/imgs/icons/icon-home.png" />
+    </a>
+  </header>
 
-        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="https://www.youtube.com/seu-canal" target="_blank">
-          <i class="fab fa-youtube"></i>
-        </a>
+  <main class="main-banner mapa-interativo">
+    <section>
+      <div class="texts">
+        <h2>Encontre abrigos e pontos de doação perto de você.</h2>
+        <p>
+          Navegue pelo mapa abaixo e clique nos pontos para ver os recursos
+          disponíveis, o que ainda é necessário e se o local está recebendo
+          novas pessoas.
+        </p>
       </div>
-    </footer>
+      <div class="search-filter">
+        <div class="input-search">
+          <input type="text" id="search" name="search" />
+          <img src="/imgs/icons/icon-search.png" />
+        </div>
+        <div class="filter">
+          <img src="/imgs/icons/icon-filter.png" />
+          <p>Filtros</p>
+        </div>
+      </div>
+      <div class="map"></div>
+      <div class="warning">
+        <p>⚠️ Aviso:</p>
+        <p>
+          As informações desta plataforma são constantemente atualizadas.
+          Confirme disponibilidade diretamente com os pontos indicados sempre
+          que possível.
+        </p>
+      </div>
+    </section>
+  </main>
 
-    <script src="/script/script.js"></script>
-  </body>
+  <footer>
+    <img src="/imgs/logos/white-logo.png" alt="Ícone Help Map" id="help-map-icon-logo" />
+    <p>&copy; Help Map</p>
+    <div class="social-medias">
+      <a href="https://www.instagram.com/sua-pagina" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/seu-canal" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="/script/script.js"></script>
+</body>
+
 </html>

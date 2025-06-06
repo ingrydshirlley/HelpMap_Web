@@ -1,13 +1,20 @@
 .main-banner.quem-somos {
-    height: 80vh;
+    height: auto;
     background: url(/imgs/banner/banner-quem-somos.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 5rem 6rem;
     color: white;
+    width: 100%;
+}
+
+.main-banner.quem-somos div {
+    margin: 0 6rem;
+    margin-top: 20rem;
+    margin-bottom: 8rem;
+    z-index: 1;
 }
 
 .main-banner.quem-somos::before {
@@ -18,24 +25,20 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    /* preto com 40% de opacidade */
     z-index: 0;
-    /* fica atrás do conteúdo */
 }
 
 .main-banner.quem-somos h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
-    z-index: 1;
 }
 
 .main-banner.quem-somos p {
     font-size: 2rem;
-    width: 40%;
+    width: 55%;
     font-weight: 400;
     margin: 3rem 0rem 3rem 0rem;
-    z-index: 1;
 }
 
 .main-banner.quem-somos button {
@@ -79,7 +82,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 70%;
+    width: 80%;
 }
 
 .values h2 {
@@ -88,7 +91,7 @@
 
 #line-values {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 3rem;
 }
@@ -132,20 +135,11 @@
 
 .container-team .our-team {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem; 
+    gap: 2rem;
     width: 70%;
     margin-top: 2rem;
-}
-
-.container-team .our-team {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    background-color: transparent; 
-    width: 70%;
-    flex-wrap: wrap; 
 }
 
 .container-team .our-team .member {
@@ -153,7 +147,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    width: auto;
+    width: 25%;
+
 }
 
 .container-team .our-team .member .photo {
@@ -181,10 +176,10 @@
 }
 
 .container-team .our-team .member p:last-child {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #555;
     text-align: center;
-        width: auto;
+    width: auto;
 }
 
 .container-team .our-team .member .photo.one {
@@ -207,27 +202,167 @@
     background-image: url(/imgs/team/photo-five.jpg);
 }
 
-/* Responsividade */
+
+
 @media (max-width: 768px) {
     .container-team .our-team {
         width: 90%;
         gap: 2rem;
     }
-    
+
     .container-team .our-team .member {
         width: 100px;
     }
-    
+
     .container-team .our-team .member .photo {
         width: 100px;
         height: 100px;
     }
-    
+
     .container-team .our-team .member .name {
         font-size: 1rem;
     }
-    
+
     .container-team .our-team .member p:last-child {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1515px) {
+    .main-banner.quem-somos h1 {
+        font-size: 5rem;
+    }
+
+    .main-banner.quem-somos p {
+        font-size: 1.8rem;
+        width: 50%;
+    }
+
+    .main-banner.quem-somos button {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .values {
+        gap: 5rem;
+        width: 70%;
+    }
+
+    .value {
+        width: 20rem;
+    }
+
+    #line-values {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1010px) {
+    .main-banner.quem-somos p {
+        font-size: 1.5rem;
+        width: 65%;
+    }
+
+    .main-banner.quem-somos h1 {
+        font-size: 4rem;
+    }
+
+    .values .value img {
+        height: 20px;
+    }
+
+    #line-values .value .title {
+        font-size: 1.5rem;
+    }
+
+    #line-values .value p {
+        font-size: 1.5rem;
+    }
+
+    .box-mvv h2 {
+        font-size: 2rem;
+    }
+
+    .box-mvv p {
+        font-size: 1.5rem;
+    }
+
+    .values h2 {
+        font-size: 2rem;
+    }
+
+    .values {
+        gap: 3rem;
+        width: 70%;
+    }
+
+    .container-mvv {
+        padding: 7rem 6rem;
+        gap: 5rem;
+    }
+
+    .container-team {
+        padding: 6rem 6rem;
+        gap: 3rem;
+    }
+
+    .container-team h2 {
+        font-size: 2rem;
+    }
+
+    .container-team p {
+        font-size: 1.5rem;
+    }
+
+    .container-team .our-team {
+        margin-top: 1.5rem;
+    }
+
+    .container-team .our-team .member .photo {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .container-team .our-team .member .name {
+        font-size: 1.5rem;
+    }
+
+    .container-team .our-team .member p:last-child {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .container-team .our-team .member .photo {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-banner.quem-somos {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-banner.quem-somos div {
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .main-banner.quem-somos h1 {
+        font-size: 3.5rem;
+    }
+
+    .main-banner.quem-somos p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .main-banner.quem-somos button {
+        font-size: 1.5rem;
     }
 }
