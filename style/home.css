@@ -1,4 +1,3 @@
-/* Variáveis */
 :root {
     --yellow: #ffb703;
     --bg-red: #b22222;
@@ -8,7 +7,6 @@
     --card-border-radius: 16px;
 }
 
-/* MAIN BANNER */
 .main-banner.home {
     height: 80rem;
     background: url(/imgs/banner/banner-home.jpg) center center no-repeat;
@@ -51,7 +49,7 @@
     cursor: pointer;
 }
 
-/* PROBLEM */
+
 .container-problem {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -91,7 +89,6 @@
     cursor: pointer;
 }
 
-/* Galeria de fotos */
 .container-problem .photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -117,6 +114,8 @@
     object-fit: cover;
     display: block;
 }
+
+
 
 .container-solution {
     display: flex;
@@ -144,6 +143,8 @@
 
 }
 
+
+
 .container-actions {
     padding: 10rem 6rem;
     background-color: var(--bg);
@@ -167,7 +168,6 @@
     font-weight: 400;
 }
 
-/* Container dos cards */
 .container-actions .actions {
     display: flex;
     justify-content: space-between;
@@ -221,3 +221,258 @@
     color: #555;
     flex-grow: 1;
 }
+
+
+
+@media (max-width: 1515px) {
+    .texts_banner_home {
+        width: 60%;
+    }
+
+    .container-problem {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 2rem;
+        padding: 10rem 6rem;
+        color: black;
+    }
+
+    .container-problem .texts {
+        max-width: 95%;
+    }
+
+    .container-problem .texts h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-problem .texts p {
+        font-size: 1.8rem;
+    }
+
+    .container-problem .texts button {
+        font-size: 1.8rem;
+    }
+
+    .container-solution .texts h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-solution .texts p {
+        font-size: 1.8rem;
+    }
+
+    .container-actions .texts h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-actions .texts p {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 1290px) {
+    .texts_banner_home h1 {
+        font-size: 4.5rem;
+    }
+
+    .texts_banner_home p {
+        font-size: 1.8rem;
+    }
+
+    .texts_banner_home button {
+        font-size: 1.8rem;
+    }
+
+    .container-problem .texts {
+        max-width: 95%;
+    }
+
+    .container-problem .texts h2 {
+        font-size: 3rem;
+    }
+
+    .container-problem .texts p {
+        font-size: 1.5rem;
+    }
+
+    .container-problem .texts button {
+        font-size: 1.5rem;
+    }
+
+    .container-solution .texts h2 {
+        font-size: 3rem;
+    }
+
+    .container-solution .texts p {
+        font-size: 1.5rem;
+    }
+
+    .container-actions .texts h2 {
+        font-size: 3rem;
+    }
+
+    .container-actions .texts p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .texts_banner_home h1 {
+        font-size: 4rem;
+    }
+
+    .texts_banner_home p {
+        font-size: 1.5rem;
+    }
+
+    .texts_banner_home button {
+        font-size: 1.5rem;
+    }
+
+    .container-problem .texts h2 {
+        font-size: 2.6rem;
+    }
+
+    .container-problem .texts p {
+        font-size: 1.3rem;
+    }
+
+    .container-problem .texts button {
+        font-size: 1.3rem;
+    }
+
+    .container-solution .texts h2 {
+        font-size: 2.6rem;
+    }
+
+    .container-solution .texts p {
+        font-size: 1.3rem;
+    }
+
+    .container-actions .texts h2 {
+        font-size: 2.6rem;
+    }
+
+    .container-actions .texts p {
+        font-size: 1.3rem;
+    }
+
+    .container-actions .action h3 {
+        font-size: 1.5rem;
+    }
+
+    .container-actions .action p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .main-banner.home {
+        align-items: center;
+        height: 75vh;
+    }
+
+    .main-banner.home::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+
+    .texts_banner_home {
+        width: 80%;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 0;
+
+    }
+
+    .texts_banner_home h1 {
+        font-size: 3rem;
+    }
+
+    .texts_banner_home p {
+        font-size: 1.5rem;
+    }
+
+    .texts_banner_home button {
+        font-size: 1.5rem;
+    }
+
+    .container-problem {
+        padding: 5rem 6rem;
+    }
+
+    .container-solution {
+        padding: 5rem 6rem;
+    }
+
+    .container-actions {
+        padding: 5rem 6rem;
+        gap: 1rem;
+    }
+
+    .container-actions .actions {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .container-actions .action {
+        width: 100%;
+        height: 20rem;
+    }
+
+    .container-actions .action .photo {
+        height: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-problem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .container-problem .texts {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .container-solution {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .container-solution .texts {
+        width: 100%;
+    }
+
+    .container-solution iframe {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .container-actions {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {}
